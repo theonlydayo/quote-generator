@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: red;
+  background-color: #111;
 }
 
 .wrapper {
-  width: 400px;
+  width: 450px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -19,49 +19,55 @@ body {
 
 .container {
   width: 100%;
-  background-color: red;
-  padding: 50px 40px;
-  box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+  background-color: #fff;
+  padding: 60px 45px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
   position: relative;
-  border-radius: 8px;
+  border-radius: 18px;
   text-align: center;
 }
 
-.container:after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 120%;
-  background-color: white;
-  z-index: -1;
-  top: -10%;
-  left: 10%;
+.container p {
+  color: #111;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.container p {
-  color: white;
-  line-height: 2;
-  font-size: 18px;
+.container p::before {
+  content: "“";
+  font-size: 3.5rem;
+  color: #999;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .container h3 {
-  color: white;
-  margin: 20px 0 60px 0;
+  color: #555;
+  margin: 30px 0 50px;
+  font-size: 0.95rem;
   font-weight: 600;
-  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .container button {
-  background-color: white;
-  border: none;
-  padding: 15px 45px;
-  border-radius: 5px;
-  font-size: 18px;
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #111;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
   font-weight: 600;
-  color: red;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.container button:hover{
-    background-color: lightgrey;
+.container button:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+.container button:active {
+  transform: scale(0.97);
 }
